@@ -1,0 +1,33 @@
+.mi-pie-de-pagina {
+  height: 70px;
+}
+
+.imagen-pie-de-pagina {
+  height: 50px;
+  width: 50px;
+}
+
+.imagen-arriba {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tabla-bio {
+  width: 100%;
+}
+
+.mismo-ancho-tabla {
+  width: 14%;
+}
+
+.color-botones {
+  background-color: rgba(0, 150, 100, 0.89);
+}
