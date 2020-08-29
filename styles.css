@@ -31,3 +31,15 @@
 .color-botones {
   background-color: rgba(0, 150, 100, 0.89);
 }
+
+@media screen and (max-width: 800px) {
+  #nombre {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #nombre {
+    font-size: 45px;
+  }
+}
