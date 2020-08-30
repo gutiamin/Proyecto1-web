@@ -31,3 +31,16 @@
 .color-botones {
   background-color: rgba(0, 150, 100, 0.89);
 }
+
+/*Agrandar un poco el tamaño de la fuente*/
+p, table{
+  font-size: 1.5rem;
+}
+
+li a{
+  font-size: 1.5rem;
+}
+
+h2{
+  font-size: 2rem;
+}
