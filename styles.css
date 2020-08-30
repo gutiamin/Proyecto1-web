@@ -1,5 +1,4 @@
 /* El código css es legible, con nombres significativos */
-
 .mi-pie-de-pagina {
   height: 70px;
 }
@@ -33,3 +32,29 @@
 .color-botones {
   background-color: rgba(0, 150, 100, 0.89);
 }
+
+@media screen and (max-width: 800px) {
+  #nombre {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #nombre {
+    font-size: 45px;
+  }
+}
+
+/*Agrandar un poco el tamaño de la fuente*/
+p, table{
+  font-size: 1.5rem;
+}
+
+li a{
+  font-size: 1.5rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+

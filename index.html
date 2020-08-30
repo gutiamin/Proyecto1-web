@@ -22,390 +22,396 @@
       revisar unas cosas para que sea responsive y usar más tags de layout-->
   <!--https://validator.w3.org/nu/?doc=https%3A%2F%2Fgutiamin.github.io%2FProyecto1-web%2F en este URL se pueden ver comentarios
       sobre el código los cuales en su mayoría son acerca de iframe-->
-  <body class="bg-light">
-    <div class="imagen-arriba px-0">
-      <div class="row">
-        <div class="col-12">
-          <img
-            src="Banner ancho.jpg"
-            class="img-fluid"
-            alt="Responsive image"
-          />
-          <div class="centrado">
-            <div class="col-10 mx-auto">
-              <h1 class="display-3 px-3 py-3">Juan Francisco Gutiérrez Amín</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a
-          class="nav-link text-info active"
-          id="home-tab"
-          data-toggle="tab"
-          href="#home"
-          role="tab"
-          aria-controls="home"
-          aria-selected="true"
-          >Personal Profile</a
-        >
-      </li>
-      <li class="nav-item" role="presentation">
-        <a
-          class="nav-link text-info"
-          id="bio-inf-tab"
-          data-toggle="tab"
-          href="#bio-inf"
-          role="tab"
-          aria-controls="bio-inf"
-          aria-selected="true"
-          >Biographical Information</a
-        >
-      </li>
-      <li class="nav-item" role="presentation">
-        <a
-          class="nav-link text-info"
-          id="academic-tab"
-          data-toggle="tab"
-          href="#academic"
-          role="tab"
-          aria-controls="academic"
-          aria-selected="false"
-          >Academic and Professional Information</a
-        >
-      </li>
-      <li class="nav-item dropdown" role="presentation">
-        <a
-          class="nav-link text-info dropdown-toggle"
-          data-toggle="dropdown"
-          href="#"
-          role="button"
-          aria-haspopup="true"
-          aria-expanded="false"
-          >Some places to hang out</a
-        >
-        <div class="dropdown-menu">
-          <a
-            class="dropdown-item nav-link"
-            id="chorus1-tab"
-            data-toggle="tab"
-            href="#chorus1"
-            role="tab"
-            aria-controls="chorus1"
-            aria-selected="false"
-            >Chorus performance - Pt 1</a
-          >
-          <a
-            class="dropdown-item nav-link"
-            id="chorus2-tab"
-            data-toggle="tab"
-            href="#chorus2"
-            role="tab"
-            aria-controls="chorus2"
-            aria-selected="false"
-            >Chorus performance - Pt 2</a
-          >
-          <div class="dropdown-divider"></div>
-          <a
-            class="dropdown-item nav-link"
-            id="soccer-tab"
-            href="https://onefootball.com/es/inicio"
-            target="_blank"
-            >My favorite soccer website</a
-          >
-        </div>
-      </li>
-    </ul>
-    <div class="tab-content my-2" id="myTabContent">
-      <div
-        class="tab-pane fade show active container"
-        id="home"
-        role="tabpanel"
-        aria-labelledby="home-tab"
-      >
+  <body class="d-flex flex-column min-vh-100">
+    <div class="bg-light">
+      <div class="imagen-arriba px-0">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12">
             <img
-              src="CV.jpg"
-              class="img-fluid rounded-circle"
+              src="Banner ancho.jpg"
+              class="img-fluid"
               alt="Responsive image"
             />
-          </div>
-          <div class="col-8 py-3 my-auto">
-            <h2 class="text-center text-info">Personal Profile</h2>
-            <p>
-              I consider myself as a responsible person, flexible, with ease of
-              adaptation and great teamwork skills, as well as under pressure
-              work, due to tolerance and respect, values that govern my
-              interpersonal relationships.
-            </p>
-            <p>
-              I am passionate about expanding my knowledge in the area of
-              ​​information technology in order to provide the best solutions
-              for all types of businesses. I am motivated by new challenges in
-              my personal and professional life.
-            </p>
+            <div class="centrado">
+              <div class="col-10 mx-auto">
+                <!-- Se modifica el nombre para que este sea responsive como el resto de la pagina-->
+                <h1 id="nombre" class="display-3 px-3 py-3">
+                  Juan Francisco Gutiérrez Amín
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div
-        class="tab-pane fade"
-        id="bio-inf"
-        role="tabpanel"
-        aria-labelledby="bio-inf-tab"
-      >
-        <div class="col-10 mx-auto">
-          <h2 class="text-center text-info my-5">Biographical Information</h2>
-          <div class="table-responsive w-100 my-5">
-            <table class="table-striped tabla-bio text-center">
-              <tr>
-                <th class="mismo-ancho-tabla">Name</th>
-                <th class="mismo-ancho-tabla">Last Name</th>
-                <th class="mismo-ancho-tabla">Age</th>
-                <th class="mismo-ancho-tabla">Weight</th>
-                <th class="mismo-ancho-tabla">Height</th>
-                <th class="mismo-ancho-tabla">Place of birth</th>
-                <th class="mismo-ancho-tabla">Birthday</th>
-              </tr>
-              <tr>
-                <td>Juan Francisco</td>
-                <td>Gutiérrez Amín</td>
-                <td>22</td>
-                <td>62 kg</td>
-                <td>170cm</td>
-                <td>Bogotá, Colombia</td>
-                <td>February 13th, 1998</td>
-              </tr>
-            </table>
+
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link text-info active"
+            id="home-tab"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            >Personal Profile</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link text-info"
+            id="bio-inf-tab"
+            data-toggle="tab"
+            href="#bio-inf"
+            role="tab"
+            aria-controls="bio-inf"
+            aria-selected="true"
+            >Biographical Information</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link text-info"
+            id="academic-tab"
+            data-toggle="tab"
+            href="#academic"
+            role="tab"
+            aria-controls="academic"
+            aria-selected="false"
+            >Academic and Professional Information</a
+          >
+        </li>
+        <li class="nav-item dropdown" role="presentation">
+          <a
+            class="nav-link text-info dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Some places to hang out</a
+          >
+          <div class="dropdown-menu">
+            <a
+              class="dropdown-item nav-link"
+              id="chorus1-tab"
+              data-toggle="tab"
+              href="#chorus1"
+              role="tab"
+              aria-controls="chorus1"
+              aria-selected="false"
+              >Chorus performance - Pt 1</a
+            >
+            <a
+              class="dropdown-item nav-link"
+              id="chorus2-tab"
+              data-toggle="tab"
+              href="#chorus2"
+              role="tab"
+              aria-controls="chorus2"
+              aria-selected="false"
+              >Chorus performance - Pt 2</a
+            >
+            <div class="dropdown-divider"></div>
+            <a
+              class="dropdown-item nav-link"
+              id="soccer-tab"
+              href="https://onefootball.com/es/inicio"
+              target="_blank"
+              >My favorite soccer website</a
+            >
           </div>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="academic"
-        role="tabpanel"
-        aria-labelledby="academic-tab"
-      >
-        <div class="container-fluid">
+        </li>
+      </ul>
+      <div class="tab-content my-2" id="myTabContent">
+        <div
+          class="tab-pane fade show active container"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
           <div class="row">
-            <div class="col-12 col-md-6">
-              <h2 class="text-center text-info">Academic Information</h2>
-              <p class="text-center">
-                <a
-                  class="btn btn-primary bg-info"
-                  data-toggle="collapse"
-                  href="#school"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="school"
-                >
-                  Elementary and High School
-                </a>
-                <a
-                  class="btn btn-primary bg-info"
-                  data-toggle="collapse"
-                  href="#dise"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="dise"
-                >
-                  Minor in Design
-                </a>
-                <a
-                  class="btn btn-primary bg-info"
-                  data-toggle="collapse"
-                  href="#disc"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="disc"
-                >
-                  Systems and Computing Engineering
-                </a>
-              </p>
-              <div class="collapse" id="school">
-                <div class="card card-body">
-                  <div class="row">
-                    <div class="col-10 mx-auto">
-                      <a
-                        href="https://www.liceocervantes.edu.co/"
-                        target="_blank"
-                      >
-                        <img
-                          src="Cervantes.png"
-                          class="img-fluid"
-                          alt="Responsive image"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <h3>Elementary and High School</h3>
-                  <h4>(2003-2014)</h4>
-                  <p>
-                    I studied my elementary and high school in this traditional
-                    colombian school. Well known for its values and academical
-                    excellence in Bogotá.
-                  </p>
-                </div>
-              </div>
-              <div class="collapse" id="dise">
-                <div class="card card-body">
-                  <div class="row">
-                    <div class="col-10 mx-auto">
-                      <a
-                        href="https://sistemas.uniandes.edu.co/en/isis-program-description/general-information-degrees"
-                        target="_blank"
-                      >
-                        <img
-                          src="Uniandes.png"
-                          class="img-fluid"
-                          alt="Responsive image"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <h3>Minor in Design</h3>
-                  <h4>(2015-2016)</h4>
-                  <p>
-                    I began my undergraduate studies in Design, then I decided
-                    to transfer to another carrer, so the university has the
-                    chance to homologate this time as a "Minor" in Design,
-                    better called as an "Option".
-                  </p>
-                </div>
-              </div>
-              <div class="collapse" id="disc">
-                <div class="card card-body">
-                  <div class="row">
-                    <div class="col-10 mx-auto">
-                      <a
-                        href="https://sistemas.uniandes.edu.co/en/isis-program-description/general-information-degrees"
-                        target="_blank"
-                      >
-                        <img
-                          src="Uniandes.png"
-                          class="img-fluid"
-                          alt="Responsive image"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <h3>Bachelor in Systems and Computer Engineering</h3>
-                  <h4>(2017-Present)</h4>
-                  <p>
-                    I started the program after transfering from design. I have
-                    acquired experience in agile teamwork, as well as
-                    programming, and i would like to develop my carrer in
-                    Information Technologies.
-                  </p>
-                </div>
-              </div>
+            <div class="col-4">
+              <img
+                src="CV.jpg"
+                class="img-fluid rounded-circle"
+                alt="Responsive image"
+              />
             </div>
-            <div class="col-12 col-md-6">
-              <h2 class="text-center text-info">Professional Information</h2>
-              <p class="text-center">
-                <a
-                  class="btn btn-primary bg-info"
-                  data-toggle="collapse"
-                  href="#exp"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="exp"
-                >
-                  Experiences
-                </a>
-                <a
-                  class="btn btn-primary bg-info"
-                  data-toggle="collapse"
-                  href="#skill"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="skill"
-                >
-                  Skills
-                </a>
+            <div class="col-8 py-3 my-auto">
+              <h2 class="text-center text-info">Personal Profile</h2>
+              <p>
+                I consider myself as a responsible person, flexible, with ease
+                of adaptation and great teamwork skills, as well as under
+                pressure work, due to tolerance and respect, values that govern
+                my interpersonal relationships.
               </p>
-              <div class="collapse" id="exp">
-                <div class="card card-body">
-                  <h3>Racing Challenge</h3>
-                  <h4>Universidad de los Andes</h4>
-                  <p>March 12th, 2016</p>
-                  <hr />
-                  <h3>B[side] Challenge</h3>
-                  <h4>Universidad de los Andes/HTW Berlin</h4>
-                  <p>October 9th - October 12th, 2018</p>
+              <p>
+                I am passionate about expanding my knowledge in the area of
+                ​​information technology in order to provide the best solutions
+                for all types of businesses. I am motivated by new challenges in
+                my personal and professional life.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="bio-inf"
+          role="tabpanel"
+          aria-labelledby="bio-inf-tab"
+        >
+          <div class="col-10 mx-auto">
+            <h2 class="text-center text-info my-5">Biographical Information</h2>
+            <div class="table-responsive w-100 my-5">
+              <table class="table-striped tabla-bio text-center">
+                <tr>
+                  <th class="mismo-ancho-tabla">Name</th>
+                  <th class="mismo-ancho-tabla">Last Name</th>
+                  <th class="mismo-ancho-tabla">Age</th>
+                  <th class="mismo-ancho-tabla">Weight</th>
+                  <th class="mismo-ancho-tabla">Height</th>
+                  <th class="mismo-ancho-tabla">Place of birth</th>
+                  <th class="mismo-ancho-tabla">Birthday</th>
+                </tr>
+                <tr>
+                  <td>Juan Francisco</td>
+                  <td>Gutiérrez Amín</td>
+                  <td>22</td>
+                  <td>62 kg</td>
+                  <td>170cm</td>
+                  <td>Bogotá, Colombia</td>
+                  <td>February 13th, 1998</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="academic"
+          role="tabpanel"
+          aria-labelledby="academic-tab"
+        >
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h2 class="text-center text-info">Academic Information</h2>
+                <p class="text-center">
+                  <a
+                    class="btn btn-primary bg-info"
+                    data-toggle="collapse"
+                    href="#school"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="school"
+                  >
+                    Elementary and High School
+                  </a>
+                  <a
+                    class="btn btn-primary bg-info"
+                    data-toggle="collapse"
+                    href="#dise"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="dise"
+                  >
+                    Minor in Design
+                  </a>
+                  <a
+                    class="btn btn-primary bg-info"
+                    data-toggle="collapse"
+                    href="#disc"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="disc"
+                  >
+                    Systems and Computing Engineering
+                  </a>
+                </p>
+                <div class="collapse" id="school">
+                  <div class="card card-body">
+                    <div class="row">
+                      <div class="col-10 mx-auto">
+                        <a
+                          href="https://www.liceocervantes.edu.co/"
+                          target="_blank"
+                        >
+                          <img
+                            src="Cervantes.png"
+                            class="img-fluid"
+                            alt="Responsive image"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <h3>Elementary and High School</h3>
+                    <h4>(2003-2014)</h4>
+                    <p>
+                      I studied my elementary and high school in this
+                      traditional colombian school. Well known for its values
+                      and academical excellence in Bogotá.
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse" id="dise">
+                  <div class="card card-body">
+                    <div class="row">
+                      <div class="col-10 mx-auto">
+                        <a
+                          href="https://sistemas.uniandes.edu.co/en/isis-program-description/general-information-degrees"
+                          target="_blank"
+                        >
+                          <img
+                            src="Uniandes.png"
+                            class="img-fluid"
+                            alt="Responsive image"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <h3>Minor in Design</h3>
+                    <h4>(2015-2016)</h4>
+                    <p>
+                      I began my undergraduate studies in Design, then I decided
+                      to transfer to another carrer, so the university has the
+                      chance to homologate this time as a "Minor" in Design,
+                      better called as an "Option".
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse" id="disc">
+                  <div class="card card-body">
+                    <div class="row">
+                      <div class="col-10 mx-auto">
+                        <a
+                          href="https://sistemas.uniandes.edu.co/en/isis-program-description/general-information-degrees"
+                          target="_blank"
+                        >
+                          <img
+                            src="Uniandes.png"
+                            class="img-fluid"
+                            alt="Responsive image"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <h3>Bachelor in Systems and Computer Engineering</h3>
+                    <h4>(2017-Present)</h4>
+                    <p>
+                      I started the program after transfering from design. I
+                      have acquired experience in agile teamwork, as well as
+                      programming, and i would like to develop my carrer in
+                      Information Technologies.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="collapse" id="skill">
-                <div class="card card-body">
-                  <h3>Skills</h3>
-                  <p>
-                    Excelent with programming languages such as Java,
-                    JavaScript, Python, CSS, SQL, HTML, SQL and BPMN
-                  </p>
-                  <p>
-                    Good with technologies such as Maven, Docker, Angular,
-                    Archimate, Node.js, MongoDB, Django and Auth0
-                  </p>
-                  <p>
-                    Good with programs such as Adobe Illustrator, Adobe Animate,
-                    3DS MAX and Microsoft Excel
-                  </p>
-                  <hr />
-                  <h3>Languages</h3>
-                  <p>
-                    My native language is spanish, I also scored 94/120 in the
-                    TOEFL (English-US). I studied german at
-                    <a
-                      href="https://www.goethe.de/ins/co/es/spr/kur/gia/all.html?gclid=Cj0KCQjws536BRDTARIsANeUZ58Q7-fsmmAXFfOxv4QTMyR3mJTik2fozYIjqlSOao46jBopbZ3V50saArNHEALw_wcB"
-                      target="_blank"
-                      >Goethe Institut</a
-                    >, where I reached B1 level in german.
-                  </p>
+              <div class="col-12 col-md-6">
+                <h2 class="text-center text-info">Professional Information</h2>
+                <p class="text-center">
+                  <a
+                    class="btn btn-primary bg-info"
+                    data-toggle="collapse"
+                    href="#exp"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="exp"
+                  >
+                    Experiences
+                  </a>
+                  <a
+                    class="btn btn-primary bg-info"
+                    data-toggle="collapse"
+                    href="#skill"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="skill"
+                  >
+                    Skills
+                  </a>
+                </p>
+                <div class="collapse" id="exp">
+                  <div class="card card-body">
+                    <h3>Racing Challenge</h3>
+                    <h4>Universidad de los Andes</h4>
+                    <p>March 12th, 2016</p>
+                    <hr />
+                    <h3>B[side] Challenge</h3>
+                    <h4>Universidad de los Andes/HTW Berlin</h4>
+                    <p>October 9th - October 12th, 2018</p>
+                  </div>
+                </div>
+                <div class="collapse" id="skill">
+                  <div class="card card-body">
+                    <h3>Skills</h3>
+                    <p>
+                      Excelent with programming languages such as Java,
+                      JavaScript, Python, CSS, SQL, HTML, SQL and BPMN
+                    </p>
+                    <p>
+                      Good with technologies such as Maven, Docker, Angular,
+                      Archimate, Node.js, MongoDB, Django and Auth0
+                    </p>
+                    <p>
+                      Good with programs such as Adobe Illustrator, Adobe
+                      Animate, 3DS MAX and Microsoft Excel
+                    </p>
+                    <hr />
+                    <h3>Languages</h3>
+                    <p>
+                      My native language is spanish, I also scored 94/120 in the
+                      TOEFL (English-US). I studied german at
+                      <a
+                        href="https://www.goethe.de/ins/co/es/spr/kur/gia/all.html?gclid=Cj0KCQjws536BRDTARIsANeUZ58Q7-fsmmAXFfOxv4QTMyR3mJTik2fozYIjqlSOao46jBopbZ3V50saArNHEALw_wcB"
+                        target="_blank"
+                        >Goethe Institut</a
+                      >, where I reached B1 level in german.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="chorus1"
-        role="tabpanel"
-        aria-labelledby="chorus1-tab"
-      >
-        <div class="embed-responsive embed-responsive-16by9 col-md-8 mx-auto">
-          <iframe
-            class="embed-responsive-item"
-            src="https://www.youtube.com/embed/SrYqm6Kiq-A"
-            allowfullscreen
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <div
+          class="tab-pane fade"
+          id="chorus1"
+          role="tabpanel"
+          aria-labelledby="chorus1-tab"
+        >
+          <div class="embed-responsive embed-responsive-16by9 col-md-8 mx-auto">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/SrYqm6Kiq-A"
+              allowfullscreen
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="chorus2"
-        role="tabpanel"
-        aria-labelledby="chorus2-tab"
-      >
-        <div class="embed-responsive embed-responsive-16by9 col-md-8 mx-auto">
-          <iframe
-            class="embed-responsive-item"
-            src="https://www.youtube.com/embed/DNf34WsfuxE"
-            allowfullscreen
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <div
+          class="tab-pane fade"
+          id="chorus2"
+          role="tabpanel"
+          aria-labelledby="chorus2-tab"
+        >
+          <div class="embed-responsive embed-responsive-16by9 col-md-8 mx-auto">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/DNf34WsfuxE"
+              allowfullscreen
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
-    <footer class="sticky-bottom bg-info">
+    <!--Poner la información de redes sociales en la parte inferior de la página para que no se vea tan pequeña-->
+    <footer class="fixed-bottom bg-info">
       <div class="col-10 mx-auto">
         <div class="row">
           <div class="col-1"></div>
@@ -432,6 +438,7 @@
           </div>
           <div class="col-2">
             <a href="https://www.github.com/gutiamin" target="_blank">
+              <!--Encontrar una imagen sin partes blancas para que quede más estético-->
               <img
                 src="Github.png"
                 class="img-fluid rounded-circle imagen-pie-de-pagina"
@@ -451,26 +458,25 @@
               <span class="text-white" id="dirMail">gutiamin@gmail.com</span>
             </a>
           </div>
-          <div class="col-1"></div>
         </div>
-      </div>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
+      </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"
+      ></script>
+    </div>
   </body>
 </html>
