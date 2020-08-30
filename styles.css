@@ -43,3 +43,16 @@
     font-size: 45px;
   }
 }
+
+/*Agrandar un poco el tamaño de la fuente*/
+p, table{
+  font-size: 1.5rem;
+}
+
+li a{
+  font-size: 1.5rem;
+}
+
+h2{
+  font-size: 2rem;
+}
